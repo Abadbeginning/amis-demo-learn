@@ -21,14 +21,14 @@
       body,
       .app-wrapper {
         position: relative;
+        background: linear-gradient(90deg, #C7C5F4, #7tj76BCC) !important;
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
       }
-
-      .panelClassName {
-          font-size: 20px;
+      .panelClassName .input {
+        width: 300px;
       }
     </style>
   </head>
@@ -43,20 +43,22 @@
           type: "page",
           body: {
             type: "form",
-            // className: "panelClassName",
+            title: "请登陆",
+            "mode": "horizontal",
             // className:
             //   "border-solid border-2 border-blue-500 rounded-xl shadow-lg",
             body: [
               {
                 type: "input-text",
-                className: "text-green-700",
                 label: "用户名",
+                size: "md",
                 name: "username",
               },
               {
                 type: "input-password",
                 label: "密码",
                 name: "password",
+                size: "md",
               },
             ],
           },
